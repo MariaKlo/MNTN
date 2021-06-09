@@ -1,0 +1,122 @@
+/* ----- Links to fonts ----- */
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('../fonts/Chronicle Display Black.otf');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-ExtraBold.otf');
+}
+
+/* ------ Specification ------ */
+
+body {
+	font-family: 'Gilroy', sans-serif;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	font-size: 14px;
+	letter-spacing: 0;
+	font-weight: 100;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active
+
+ {
+	outline: none;
+}
+
+a:hover {
+	outline: none;
+}
+
+.container-fluid_plain {
+	padding: 0;
+}
+
+/* ----- Header ----- */
+/* --- Upper menu ----- */
+.header {
+	background: #354147 url(../img/bg.png) no-repeat center center/cover;
+	padding-top: 44px;
+}
+
+.header-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 185px;
+}
+
+.logo {
+	font-weight: 800;
+	font-size: 32px;
+	letter-spacing: 1.9px;
+}
+
+.nav-menu-horizontal {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.link-item {
+	font-size: 18px;
+}
+
+.account {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.account-link {
+	font-size: 17px;
+}
+
+/* ----- title, subtitle, vertical menu ------ */
+.social-media {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding-top: 58px;
+	height: 200px;
+}
+
+.social-media-text {
+	writing-mode: vertical-lr;
+  	text-orientation: mixed;
+}
+
+/* ----- About ----- */
+
+/* ----- Footer ----- */
