@@ -68,13 +68,15 @@ a:hover {
 /* --- Upper menu ----- */
 .header {
 	background: #354147 url(../img/bg.png) no-repeat center center/cover;
-	padding-top: 44px;
+	padding-top: 2.75em;
+	padding-bottom: 50.8em;
 }
 
 .header-wrapper {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 185px;
+	align-items: center;
 }
 
 .logo {
@@ -102,13 +104,16 @@ a:hover {
 	font-size: 17px;
 }
 
+.fa-user-circle {
+	margin-right: 5px;
+}
+
 /* ----- title, subtitle, vertical menu ------ */
 .social-media {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: space-around;
-	padding-top: 58px;
+	padding-top: 25px;
 	height: 200px;
 }
 
@@ -117,6 +122,105 @@ a:hover {
   	text-orientation: mixed;
 }
 
+.main-content-subtitle, .about-content--subtitle {
+	color: #FBD784;
+	font-size: 16px;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 32px;
+}
+
+.vertical-line {
+	border-bottom: 2px solid #FBD784;
+	width: 76px;
+	margin-right: 25px;
+}
+
+.main-content-title {
+	margin-bottom: 16px;
+	font-size: 4.7rem;
+}
+
+.main-content-link {
+	font-size: 18px;
+}
+
+.main-content-link span {
+	margin-left: 10px;
+	font-size: 22px;
+}
+
+.nav-menu-vertical {
+	display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+	justify-content: space-around;
+    height: 10rem;
+	border-right: 2px solid #fff;
+	padding-right: 25px;
+}
 /* ----- About ----- */
+
+.about {
+	background-color: #0B1D26;
+	padding-bottom: 11.8em;
+}
+
+.about-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.about-number-first {
+	position: absolute;
+    top: 10%;
+    left: -5%;
+    font-size: 108px;
+    z-index: -0.5;
+    opacity: 0.3;
+    letter-spacing: 0.6rem;
+}
+
+.about-wrapper-first {
+	margin-top: -425px;
+}
+
+.about-wrapper-second {
+	flex-direction: row-reverse;
+}
+
+.about-wrapper-first, .about-wrapper-second {
+	margin-bottom: 11.8em;
+	position: relative;
+}
+
+.about-content {
+	width: 40%;
+}
+
+.about-content-title {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	font-size: 3rem;
+}
+
+.about-content-text {
+	font-size: 1rem;
+	margin-bottom: 40px;
+}
+
+.about-content-link {
+	color: #FBD784;
+	font-size: 18px;
+}
+
+.about-content-link span {
+	margin-left: 10px;
+	font-size: 22px;
+}
 
 /* ----- Footer ----- */
