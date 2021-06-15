@@ -1,8 +1,4 @@
 /* ----- Links to fonts ----- */
-@font-face {
-    font-family: 'Chronicle Display';
-    src: url('../fonts/Chronicle Display Black.otf');
-}
 
 @font-face {
     font-family: 'Gilroy';
@@ -12,13 +8,13 @@
 /* ------ Specification ------ */
 
 body {
-	font-family: 'Gilroy', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	padding: 0;
 	margin: 0;
 	color: #fff;
-	font-size: 14px;
+	font-size: 1.1rem;
 	letter-spacing: 0;
-	font-weight: 100;
+	font-weight: 400;
 }
 
 div, p, form, input, a, span, button {
@@ -43,6 +39,7 @@ ul, li {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
+	font-family: 'Gilroy', sans-serif;
 }
 
 a, button, input {
@@ -58,6 +55,7 @@ button, button:hover, button:focus, button:active
 
 a:hover {
 	outline: none;
+	color: #FBD784;
 }
 
 .container-fluid_plain {
@@ -75,14 +73,14 @@ a:hover {
 .header-wrapper {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 185px;
+	margin-bottom: 11.6em;
 	align-items: center;
 }
 
 .logo {
 	font-weight: 800;
-	font-size: 32px;
-	letter-spacing: 1.9px;
+	font-size: 2rem;
+	letter-spacing: 0.2rem;
 }
 
 .nav-menu-horizontal {
@@ -91,17 +89,13 @@ a:hover {
 	align-items: center;
 }
 
-.link-item {
-	font-size: 18px;
-}
-
 .account {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 .account-link {
-	font-size: 17px;
+	font-size: 1.1rem;
 }
 
 .fa-user-circle {
@@ -113,8 +107,8 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	padding-top: 25px;
-	height: 200px;
+	padding-top: 1.6em;
+	height: 12.5em;
 }
 
 .social-media-text {
@@ -124,33 +118,29 @@ a:hover {
 
 .main-content-subtitle, .about-content--subtitle {
 	color: #FBD784;
-	font-size: 16px;
+	font-size: 1.1rem;
 	font-weight: 100;
 	text-transform: uppercase;
-	letter-spacing: 6px;
+	letter-spacing: 0.4rem;
 	display: flex;
 	align-items: center;
-	margin-bottom: 32px;
+	margin-bottom: 1.6em;
 }
 
 .vertical-line {
 	border-bottom: 2px solid #FBD784;
-	width: 76px;
-	margin-right: 25px;
+	width: 4.75em;
+	margin-right: 1.6em;
 }
 
 .main-content-title {
-	margin-bottom: 16px;
+	margin-bottom: 1em;
 	font-size: 4.7rem;
-}
-
-.main-content-link {
-	font-size: 18px;
 }
 
 .main-content-link span {
 	margin-left: 10px;
-	font-size: 22px;
+	font-size: 1.4rem;
 }
 
 .nav-menu-vertical {
@@ -159,9 +149,17 @@ a:hover {
     align-items: flex-end;
 	justify-content: space-around;
     height: 10rem;
-	border-right: 2px solid #fff;
-	padding-right: 25px;
 }
+
+.nav-menu-vertical-item {
+	border-right: 2px solid #fff;
+    padding: 15px;
+}
+
+.nav-menu-vertical-item:hover {
+	border-right: 2px solid #FBD784;
+}
+
 /* ----- About ----- */
 
 .about {
@@ -175,22 +173,34 @@ a:hover {
 	align-items: center;
 }
 
-.about-number-first {
+.about-number-first, .about-number-third {
 	position: absolute;
-    top: 10%;
+    top: 4%;
     left: -5%;
-    font-size: 108px;
-    z-index: -0.5;
-    opacity: 0.3;
+    font-size: 6.75rem;
+    opacity: 0.2;
+    letter-spacing: 0.6rem;
+}
+
+.about-number-second {
+	position: absolute;
+    top: 4%;
+    right: 35%;
+    font-size: 6.75rem;
+    opacity: 0.2;
     letter-spacing: 0.6rem;
 }
 
 .about-wrapper-first {
-	margin-top: -425px;
+	margin-top: -26.6em;
 }
 
 .about-wrapper-second {
 	flex-direction: row-reverse;
+}
+
+.about-wrapper-third {
+	position: relative;
 }
 
 .about-wrapper-first, .about-wrapper-second {
@@ -203,24 +213,60 @@ a:hover {
 }
 
 .about-content-title {
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-top: 1.6em;
+	margin-bottom: 1.6em;
 	font-size: 3rem;
 }
 
 .about-content-text {
 	font-size: 1rem;
-	margin-bottom: 40px;
+	margin-bottom: 2.5em;
 }
 
 .about-content-link {
 	color: #FBD784;
-	font-size: 18px;
 }
 
 .about-content-link span {
 	margin-left: 10px;
-	font-size: 22px;
+	font-size: 1.4rem;
 }
 
 /* ----- Footer ----- */
+
+.footer {
+	background-color: #0B1D26;
+	padding-bottom: 3.8em;
+}
+
+.footer-big-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-text {
+	margin-top: 1.4em;
+	margin-bottom: 7.5em;
+}
+
+.footer-wrapper-second {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-copyright {
+	color:#454747;
+	font-size: 1rem;
+}
+
+.footer-title {
+	color: #FBD784;
+	font-size: 1.5rem;
+	margin-bottom: 1.1em;
+	font-weight: 700;
+	font-family: 'Gilroy';
+}
+
+.footer-list-item {
+	margin-bottom: 1.5em;
+}
