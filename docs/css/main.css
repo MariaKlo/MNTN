@@ -83,7 +83,7 @@ a:hover {
 	letter-spacing: 0.2rem;
 }
 
-.nav-menu-horizontal {
+.nav-menu_horizontal {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -111,12 +111,12 @@ a:hover {
 	height: 12.5em;
 }
 
-.social-media-text {
+.social-media__text {
 	writing-mode: vertical-lr;
   	text-orientation: mixed;
 }
 
-.main-content-subtitle, .about-content--subtitle {
+.main-content__subtitle, .about-content__subtitle {
 	color: #FBD784;
 	font-size: 1.1rem;
 	font-weight: 100;
@@ -133,17 +133,17 @@ a:hover {
 	margin-right: 1.6em;
 }
 
-.main-content-title {
+.main-content__title {
 	margin-bottom: 1em;
 	font-size: 4.7rem;
 }
 
-.main-content-link span {
+.main-content__link span {
 	margin-left: 10px;
 	font-size: 1.4rem;
 }
 
-.nav-menu-vertical {
+.nav-menu_vertical {
 	display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -151,12 +151,12 @@ a:hover {
     height: 10rem;
 }
 
-.nav-menu-vertical-item {
+.nav-menu__item_vertical {
 	border-right: 2px solid #fff;
     padding: 15px;
 }
 
-.nav-menu-vertical-item:hover {
+.nav-menu__item_vertical:hover {
 	border-right: 2px solid #FBD784;
 }
 
@@ -173,16 +173,16 @@ a:hover {
 	align-items: center;
 }
 
-.about-number-first, .about-number-third {
+.about-number_first, .about-number_third {
 	position: absolute;
     top: 4%;
-    left: -5%;
+    left: -3%;
     font-size: 6.75rem;
     opacity: 0.2;
     letter-spacing: 0.6rem;
 }
 
-.about-number-second {
+.about-number_second {
 	position: absolute;
     top: 4%;
     right: 35%;
@@ -191,19 +191,19 @@ a:hover {
     letter-spacing: 0.6rem;
 }
 
-.about-wrapper-first {
+.about-wrapper_first {
 	margin-top: -26.6em;
 }
 
-.about-wrapper-second {
+.about-wrapper_second {
 	flex-direction: row-reverse;
 }
 
-.about-wrapper-third {
+.about-wrapper_third {
 	position: relative;
 }
 
-.about-wrapper-first, .about-wrapper-second {
+.about-wrapper_first, .about-wrapper_second {
 	margin-bottom: 11.8em;
 	position: relative;
 }
@@ -212,22 +212,22 @@ a:hover {
 	width: 40%;
 }
 
-.about-content-title {
+.about-content__title {
 	margin-top: 1.6em;
 	margin-bottom: 1.6em;
 	font-size: 3rem;
 }
 
-.about-content-text {
+.about-content__text {
 	font-size: 1rem;
 	margin-bottom: 2.5em;
 }
 
-.about-content-link {
+.about-content__link {
 	color: #FBD784;
 }
 
-.about-content-link span {
+.about-content__link span {
 	margin-left: 10px;
 	font-size: 1.4rem;
 }
@@ -239,7 +239,7 @@ a:hover {
 	padding-bottom: 3.8em;
 }
 
-.footer-big-wrapper {
+.footer-wrapper_biggest {
 	display: flex;
 	justify-content: space-between;
 }
@@ -249,7 +249,7 @@ a:hover {
 	margin-bottom: 7.5em;
 }
 
-.footer-wrapper-second {
+.footer-wrapper_second {
 	display: flex;
 	justify-content: space-between;
 }
@@ -269,4 +269,82 @@ a:hover {
 
 .footer-list-item {
 	margin-bottom: 1.5em;
+}
+
+/* ----- Media Queries ----- */
+/*footer*/
+/* ----- 992-1200px ----- */
+@media screen and (max-width: 1200px) {
+	.about-content {
+		width: 35%;
+	}
+	.about-number_first {
+		top: 2%;
+	}
+	.about-number_second {
+		top: 0%;
+		right: 26%;
+	}
+	.about-number_third {
+		top: 0%;
+	}	
+}
+
+/* ----- 768-992px ----- */
+@media screen and (max-width: 992px) {
+	.main-content__title {
+		font-size: 3.7rem;
+	}
+	.about-content {
+		width: 33%;
+	}
+	.about-content__subtitle {
+		font-size: 0.8rem;
+	}
+	.about-content__title {
+		font-size: 2.3rem;
+	}
+	.about-content__text {
+		font-size: 0.85rem;
+	}
+	.about-img {
+		width: 65%;
+	}
+	.about-number_first, .about-number_third {
+		top: -8%;
+	}
+	.about-number_second {
+		top: -6%;
+		right: 17%;
+	}
+}
+/* ----- 576-768px ------ */
+@media screen and (max-width: 768px) {
+	.main-content__title {
+		font-size: 3.1rem;
+		text-align: center;
+	}
+	.nav-menu_horizontal {
+		justify-content: space-around;
+	}
+	.footer-wrapper_second {
+		margin-bottom: 1.9em;
+	}
+	.about-wrapper {
+		flex-direction: column;
+		text-align: center;
+	}
+	.about-content {
+		width: 53%;
+	}
+	.about-number_second {
+		top: -6%;
+		right: 6%;
+	}
+	.footer-wrapper_biggest {
+		flex-direction: column-reverse;
+	}
+	.footer-wrapper, .footer-list {
+		text-align: center;
+	}
 }
